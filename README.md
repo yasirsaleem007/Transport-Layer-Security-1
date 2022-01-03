@@ -39,3 +39,5 @@ TLS requires four steps to provide secure communication for sockets.
 •	The second step is to establish a TCP handshake protocol, make a TCP connection, and the code sock part.
 •	The third step is to call the context object created in the first step and use the wrap_socket() method on it, which means that the OpenSLL library is responsible for controlling our TCP connection. Then exchange the necessary handshake information with the communicating party and establish an encrypted link. The ssock =context.wrap_socket... part of the code
 •	The last step is to use the ssl_sock object returned by the wrap_socket() call for all subsequent communications. Subsequent communication needs to use a format similar to ssock.method name.
+![image](https://user-images.githubusercontent.com/93581168/147959198-30fc7496-1be6-4324-a699-65bdc82f3550.png)
+
